@@ -1,0 +1,379 @@
+/* IMPORTS CSS */
+@import "/assets/css/icons.css";
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Trip Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000a12;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 45px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-top: 50px;
+}
+h1 span {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+section .no-bottom {
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 0;
+}
+.btn-login {
+  background-color: black;
+  padding: 12px 17px;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-login:hover {
+  background-color: #292929;
+}
+.container {
+  width: 1241px;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: 500;
+}
+/* HEADER */
+header .container {
+  width: 1522px;
+}
+header .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+header {
+  background-color: white;
+}
+header img {
+  width: 190px;
+}
+header ul {
+  display: flex;
+  line-height: 42px;
+  /* background-color: yellow;
+ */
+}
+header li {
+  padding: 0 12px;
+}
+.menu a:hover {
+  color: #007c60;
+}
+
+/* COVER */
+.cover {
+  height: 255px;
+  background-image: url("/assets/img/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 76px;
+}
+.cover > div {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.breadcrumbs {
+  /* height: 40px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(44, 44, 44);
+}
+.breadcrumbs > div {
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumbs ul {
+  display: flex;
+}
+.breadcrumbs li {
+  margin-right: 10px;
+}
+.breadcrumbs ul,
+.breadcrumbs span {
+  line-height: 40px;
+  font-size: 11px;
+}
+/* MENU */
+menu {
+  width: 1024px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  bottom: -76px;
+  left: calc(50% - 512px);
+  padding-top: 27px;
+  box-sizing: border-box;
+}
+menu ul {
+  display: flex;
+}
+menu li {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+menu span {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* MAIN */
+main {
+  display: flex;
+  padding-top: 24px;
+}
+main aside:first-child {
+  flex: 1;
+  margin-right: 24px;
+}
+main aside:first-child img {
+  width: 130px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+main > div {
+  flex: 2;
+  margin-right: 24px;
+}
+main aside:last-child {
+  flex: 1;
+}
+main > div section:first-child {
+  border-top: 4px solid #f2b201;
+}
+main aside:last-child img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+main aside:last-child li {
+  margin-bottom: 4px;
+}
+
+main aside:last-child ul:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* GALLERY */
+section {
+  background-color: white;
+  border-radius: 3px;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+.no-bottom {
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 0;
+}
+.flex-gallery {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.gallery > div {
+  height: 170px;
+  width: calc(50% - 1px);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.gallery > div:nth-child(1) {
+  background-image: url("/assets/img/1.jpg");
+  margin-bottom: 2px;
+}
+.gallery > div:nth-child(2) {
+  background-image: url("/assets/img/2.jpg");
+  margin-bottom: 2px;
+}
+.gallery > div:nth-child(3) {
+  background-image: url("/assets/img/3.jpg");
+}
+.gallery > div:nth-child(4) {
+  background-image: url("/assets/img/4.jpg");
+}
+.gallery > div:nth-child(4) div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery2 {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  justify-content: space-between;
+  width: 600px;
+}
+.gallery2 div {
+  height: 160px;
+  width: 180px;
+  background-size: cover;
+  margin-right: 25px;
+  background-position: center;
+  flex: none;
+}
+.gallery2 > div:nth-child(1) {
+  background-image: url("/assets/img/concorde.jpg");
+  margin-bottom: 2px;
+}
+.gallery2 > div:nth-child(2) {
+  background-image: url("/assets/img/louvres.jpg");
+  margin-bottom: 2px;
+}
+.gallery2 > div:nth-child(3) {
+  background-image: url("/assets/img/arc-triomphe.jpg");
+  margin-bottom: 2px;
+}
+.gallery2 > div:nth-child(4) {
+  background-image: url("/assets/img/moulin-rouge.jpg");
+  margin-bottom: 2px;
+}
+.gallery2 > div:nth-child(5) {
+  background-image: url("/assets/img/notre-dame.jpg");
+  margin-bottom: 2px;
+}
+.gallery2 > div:nth-child(6) {
+  background-image: url("/assets/img/sacre-coeur.jpeg");
+  margin-bottom: 2px;
+}
+/*
+.gallery2 > div:nth-child(3) div {
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+@media (max-width: 1580px) {
+  header .container {
+    width: 100%;
+  }
+  header .container > div {
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 1290px) {
+}
+
+@media (max-width: 1024px) {
+  aside {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 150px;
+  }
+  menu {
+    width: 100%;
+    left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  div > ul {
+    display: none;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+  menu {
+    height: auto;
+    padding-top: 0;
+    bottom: -177px;
+  }
+  menu i {
+    font-size: 22px;
+  }
+  menu ul {
+    flex-wrap: wrap;
+  }
+  menu span {
+    font-size: 12px;
+  }
+  menu li {
+    flex: none;
+    height: 71px;
+    border-bottom: solid 1px #e0e0e0;
+    width: calc(100% * 1 / 3);
+    justify-content: center;
+  }
+}
+
+.meilleur {
+  list-style: disc;
+}
